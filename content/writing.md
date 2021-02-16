@@ -10,7 +10,7 @@ weight: 2
 
 - "excavation" in *Biological Creatures* (online, forthcoming)
 
-# 2021
+# 2020
 
 - Honorable Mention for the **Felicia Farr Lemmon Poetry Prize** sponsored by the Academy of American Poets
 - "Senescence" and "Stability is Just a Dulling" in *Forum Magazine* (print)
