@@ -1,4 +1,4 @@
-baseURL = "https://lrenazhou.github.io/"
+baseURL = "https://lrenazhou.github.io"
 languageCode = "en-us"
 title = "lrenazhou"
 theme = "cactus"
@@ -17,7 +17,7 @@ weight = 1
 
 [[menu.main]]
 name = "Writing & Honors"
-url = "/writing/"
+url = "/writing"
 weight = 2
 
 [[menu.main]]
@@ -27,7 +27,7 @@ weight = 3
 
 [[menu.main]]
 name = "Ephemera"
-url = "/ephemera/"
+url = "/ephemera"
 weight = 4
 
 [markup]
