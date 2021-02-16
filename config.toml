@@ -1,4 +1,4 @@
-baseURL = "https://lrenazhou.github.io/"
+baseURL = "//lrenazhou.github.io/"
 languageCode = "en-us"
 title = "lrenazhou"
 theme = "hugo-theme-cactus"
