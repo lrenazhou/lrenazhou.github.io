@@ -13,19 +13,9 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Writing & Honors"
-url = "/writing"
-weight = 2
-
-[[menu.main]]
 name = "Blog"
 url = "https://lrzzzz.wordpress.com/"
 weight = 3
-
-[[menu.main]]
-name = "Ephemera"
-url = "/ephemera"
-weight = 4
 
 [markup]
   [markup.tableOfContents]
