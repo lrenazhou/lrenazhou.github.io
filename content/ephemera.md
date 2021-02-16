@@ -15,11 +15,11 @@ the moon, the body, body horror, bodies of water, holes, desire, yearning, the s
 ## Books I Like
 
 - **The Jakarta Method by Vincent Bevins:** delves into Washington's rabid anti-communism crusade in Indonesia, Brazil, Argentina, Guatemala, and around the world, showing how that brutal Cold War policy of state-sanctioned mass murder has shaped our current world order
-- **Hard Damage by Aria Arber:** beautiful unapologetically political poetry!!
+- **Hard Damage by Aria Aber:** beautiful unapologetically political poetry!!
 - **I-Hotel by Karen Tei Yamashita:** experimental, ambitious, a sprawling tome that touches upon the history of Asian American Bay Area activism and its connections to the internationalist socialist/communist politics of the 70s
 - **Blood in My Eye by George Jackson:** a collection of letters and essays by the black revolutionary before he was killed in an alleged prison escape attempt. His essays on fascism are especially illuminating
 - **Uzumaki by Junji Ito:** a classic for all horror manga lovers!!
-- **Sweet Home by Carnby Kim:** great manhwa that explores the monstrous edge of desire with lots of body horror (would not recommend the live-action remake)
+- **Sweet Home by Carnby Kim:** great manhwa that explores the monstrous side of desire with lots of body horror (would not recommend the live-action remake)
 
 ## Music I Like
 
