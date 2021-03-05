@@ -6,10 +6,6 @@ menu: "main"
 weight: 2
 ---
 
-# 2021 
-
-- "excavation" in *Biological Creatures* (online, forthcoming)
-
 # 2020
 
 - Honorable Mention for the **Felicia Farr Lemmon Poetry Prize** sponsored by the Academy of American Poets
