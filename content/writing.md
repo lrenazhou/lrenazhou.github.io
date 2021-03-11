@@ -8,9 +8,9 @@ weight: 2
 
 # 2021
 
-- "Crater" in *Crow & Cross Keys* (forthcoming)
+- "Crater" in *Crow & Cross Keys* (fiction, forthcoming)
 
 # 2020
 
 - Honorable Mention for the **Felicia Farr Lemmon Poetry Prize** sponsored by the Academy of American Poets
-- "Senescence" and "Stability is Just a Dulling" in *Forum Magazine* (print)
+- "Senescence" and "Stability is Just a Dulling" in *Forum Magazine* (poetry, print)
