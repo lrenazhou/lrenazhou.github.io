@@ -12,5 +12,5 @@ weight: 2
 
 # 2020
 
-- Honorable Mention for the **Felicia Farr Lemmon Poetry Prize** sponsored by the Academy of American Poets
+- Honorable Mention for the **2020 Felicia Farr Lemmon Poetry Prize** sponsored by the Academy of American Poets
 - "Senescence" and "Stability is Just a Dulling" in *Forum Magazine* (poetry, print)
