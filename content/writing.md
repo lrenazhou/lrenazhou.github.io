@@ -8,6 +8,7 @@ weight: 2
 
 # 2021
 
+- "Father and Son" in *Sublunary Review* (fiction, forthcoming)
 - "Excavation" in *Wrongdoing Magazine* (poetry, forthcoming)
 - "Crater" in *Crow & Cross Keys* (fiction, forthcoming)
 

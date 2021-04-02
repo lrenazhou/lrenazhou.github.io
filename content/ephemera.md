@@ -10,7 +10,7 @@ weight: 4
 
 ## Inspiration
 
-the moon, the body, body horror, bodies of water, holes, desire, yearning, the strange & supernatural & surrealist, chinese folklore, Socialism with Chinese Characteristics, the politics of revolution & solidarity, becoming & undoing, eggs, pills, computers, computer-generated-poetry, simulations
+the moon, the body, body horror, bodies of water, holes, desire, yearning, the strange & supernatural & surrealist, chinese folklore, Socialism with Chinese Characteristics, the politics of revolution & solidarity, becoming & undoing, eggs, pills, computers, computer-generated poetry, simulations
 
 ## Books I Like
 
