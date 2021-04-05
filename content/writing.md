@@ -8,6 +8,7 @@ weight: 2
 
 # 2021
 
+- "Techno Show" in *X-R-A-Y Literary Magazine* (fiction, forthcoming)
 - "Father and Son" in *Sublunary Review* (fiction, forthcoming)
 - "Excavation" in *Wrongdoing Magazine* (poetry, forthcoming)
 - "Crater" in *Crow & Cross Keys* (fiction, forthcoming)

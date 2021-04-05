@@ -24,7 +24,7 @@ weight = 1
   rss = true # generate rss feed. default value is false
 
   # Home page settings
-  description = "Lucy Zhou is a technical writer living in the San Francisco Bay Area. Her writing has appeared or is forthcoming in Sublunary Review, Crow & Cross Keys, Wrongdoing Magazine and received an honorable mention for the 2020 Felicia Farr Lemmon Poetry Prize sponsored by the Academy of American Poets. She loves long-haired cats, labyrinths, and endlessly revising her pieces. She is currently working towards the Creative Writing Certificate from the City College of San Francisco."
+  description = "Lucy Zhou is a technical writer living in the San Francisco Bay Area. Her writing has appeared or is forthcoming in X-R-A-Y Literary Magazine, Crow & Cross Keys, Sublunary Magazine, and Wrongdoing Magazine. In 2020, she received an honorable mention for the 2020 Felicia Farr Lemmon Poetry Prize sponsored by the Academy of American Poets. She loves long-haired cats, labyrinths, and endlessly revising her pieces. "
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
