@@ -10,8 +10,8 @@ weight: 2
 
 - "bone orchard" in Rejection Letters (poetry, forthcoming)
 - "Techno Show" in *X-R-A-Y Literary Magazine* (fiction, forthcoming)
-- "Excavation" in *Wrongdoing Magazine* (poetry, forthcoming)
 - "Crater" in *Crow & Cross Keys* (fiction, forthcoming)
+- "[Excavation](https://www.wrongdoingmag.com/spring-2021.html)" in *Wrongdoing Magazine* (poetry, print & online)
 - "[Father and Son](https://www.sublunaryreview.com/home/father-and-son)" in *Sublunary Review* (fiction, online)
 
 # 2020
