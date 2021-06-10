@@ -8,7 +8,8 @@ weight: 2
 
 # 2021
 
-- "bone orchard" in Rejection Letters (poetry, forthcoming)
+- "Schrödinger's Cat" in *Barren Magazine* (fiction, forthcoming)
+- "bone orchard" in *Rejection Letters* (poetry, forthcoming)
 - "Techno Show" in *X-R-A-Y Literary Magazine* (fiction, forthcoming)
 - "Crater" in *Crow & Cross Keys* (fiction, forthcoming)
 - "[Excavation](https://www.wrongdoingmag.com/spring-2021.html)" in *Wrongdoing Magazine* (poetry, print & online)
