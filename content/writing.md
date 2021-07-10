@@ -8,6 +8,7 @@ weight: 2
 
 # 2021
 
+- "Rabbit, rabbit, rabbit" in *Tiny Molecules* (fiction, forthcoming)
 - "Schrödinger's Cat" in *Barren Magazine* (fiction, forthcoming)
 - "bone orchard" in *Rejection Letters* (poetry, forthcoming)
 - "Techno Show" in *X-R-A-Y Literary Magazine* (fiction, forthcoming)
