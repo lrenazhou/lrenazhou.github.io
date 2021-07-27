@@ -14,8 +14,10 @@ weight: 2
 - "Techno Show" in *X-R-A-Y Literary Magazine* (fiction, forthcoming)
 - "Crater" in *Crow & Cross Keys* (fiction, forthcoming)
 - "[bone orchard](https://rejection-letters.com/2021/07/12/bone-orchard-lucy-zhou/)" in *Rejection Letters* (poetry, online)
+<!--{#
 - "[Excavation](https://www.wrongdoingmag.com/spring-2021.html)" in *Wrongdoing Magazine* (poetry, print & online)
 - "[Father and Son](https://www.sublunaryreview.com/home/father-and-son)" in *Sublunary Review* (fiction, online)
+#}-->
 
 # 2020
 
