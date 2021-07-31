@@ -8,11 +8,11 @@ weight: 2
 
 # 2021
 
-- "A Happy Ending" in HAD (fiction, forthcoming)
 - "Rabbit, rabbit, rabbit" in *Tiny Molecules* (fiction, forthcoming)
 - "Schrödinger's Cat" in *Barren Magazine* (fiction, forthcoming)
 - "Techno Show" in *X-R-A-Y Literary Magazine* (fiction, forthcoming)
-- "Crater" in *Crow & Cross Keys* (fiction, forthcoming)
+- "[A Happy Ending](https://www.havehashad.com/hadposts/a-happy-ending)" in HAD (fiction, online)
+- "[Crater](https://crowcrosskeys.com/2021/07/28/crater-lucy-zhou/)" in *Crow & Cross Keys* (fiction, online)
 - "[bone orchard](https://rejection-letters.com/2021/07/12/bone-orchard-lucy-zhou/)" in *Rejection Letters* (poetry, online)
 <!--{#
 - "[Excavation](https://www.wrongdoingmag.com/spring-2021.html)" in *Wrongdoing Magazine* (poetry, print & online)
