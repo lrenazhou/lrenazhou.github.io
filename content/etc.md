@@ -14,7 +14,8 @@ the moon, the body, body horror, bodies of water, holes, desire, yearning, the s
 
 ## Books I Like
 
-- **Broken Stars:** an anthology of Chinese Sci-Fi translated into English by the Hugo Award-winning Ken Liu
+- **I'm Waiting For You by Kim Bo-young:** a speculative short story collection that blew my mind with its inventiveness. Time travel, fallen gods, love that transcends time and place, it has it all! 
+- **Broken Stars by various authors:** an anthology of Chinese Sci-Fi translated into English by the Hugo Award-winning Ken Liu
 - **The Jakarta Method by Vincent Bevins:** delves into Washington's rabid anti-communism crusade in Indonesia, Brazil, Argentina, Guatemala, and around the world, showing how that brutal Cold War policy of state-sanctioned mass murder has shaped our current world order
 - **Hard Damage by Aria Aber:** beautiful unapologetically political poetry!!
 - **I-Hotel by Karen Tei Yamashita:** experimental, ambitious, a sprawling tome that touches upon the history of Asian American Bay Area activism and its connections to the internationalist socialist/communist politics of the 70s
