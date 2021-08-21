@@ -9,7 +9,6 @@ weight: 2
 # 2021
 
 - "Rabbit, rabbit, rabbit" in *Tiny Molecules* (fiction, forthcoming)
-- "Schrödinger's Cat" in *Barren Magazine* (fiction, forthcoming)
 - "Techno Show" in *X-R-A-Y Literary Magazine* (fiction, forthcoming)
 - "[Schrödinger's Cat](https://barrenmagazine.com/schrodingers-cat/)" in *Barren Magazine* (fiction, online)
 - "[A Happy Ending](https://www.havehashad.com/hadposts/a-happy-ending)" in HAD (fiction, online)
