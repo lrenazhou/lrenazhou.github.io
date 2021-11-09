@@ -39,8 +39,5 @@ weight = 1
     name = "twitter-square"
     link = "https://twitter.com/lrenazhou"
   [[params.social]]
-    name = "linkedin"
-    link = "https://www.linkedin.com/in/lrzhou/"
-  [[params.social]]
     name = "email"
     link = "lrzhou1010@gmail.com"
