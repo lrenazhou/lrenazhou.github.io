@@ -10,7 +10,7 @@ weight: 2
 
 - "[Rabbit, rabbit, rabbit](https://www.tinymolecules.com/issues/ten#lucy-zhou)" in *Tiny Molecules* (fiction, online)
 - "[Techno Show](https://xraylitmag.com/techno-show-by-lucy-zhou/)" in *X-R-A-Y Literary Magazine* (fiction, online)
-- "[Schrödinger's Cat](https://barrenmagazine.com/schrodingers-cat/)" in *Barren Magazine* (fiction, online)
+- "[Schrödinger's Cat](https://barrenmagazine.com/schrodingers-cat/)" in *Barren Magazine* (fiction, online) *Nominated for Pushcart Prize
 - "[A Happy Ending](https://www.havehashad.com/hadposts/a-happy-ending)" in HAD (fiction, online)
 - "[Crater](https://crowcrosskeys.com/2021/07/28/crater-lucy-zhou/)" in *Crow & Cross Keys* (fiction, online)
 - "[bone orchard](https://rejection-letters.com/2021/07/12/bone-orchard-lucy-zhou/)" in *Rejection Letters* (poetry, online)
