@@ -24,7 +24,7 @@ weight = 1
   rss = true # generate rss feed. default value is false
 
   # Home page settings
-  description = "Lucy Zhou is a technical writer based in the Bay Area. Her writing has appeared in HAD, Barren Magazine, X-R-A-Y Literary Magazine, and elsewhere. In 2020, she received an honorable mention for the Felicia Farr Lemmon Poetry Prize from the Academy of American Poets. She loves long-haired cats, labyrinths, and endlessly revising her pieces. "
+  description = "Lucy Zhou is a writer based in the Bay Area. Her writing has appeared in HAD, Barren Magazine, X-R-A-Y Literary Magazine, and elsewhere. In 2020, she received an honorable mention for the Felicia Farr Lemmon Poetry Prize from the Academy of American Poets. She is a poetry reader for Anomaly journal, and loves long-haired cats, labyrinths, and endlessly revising her pieces. "
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
