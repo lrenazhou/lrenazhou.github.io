@@ -6,4 +6,11 @@ menu: "main"
 weight: 3
 ---
 
-Experience here! 
+# Experience
+
+- [Tin House Summer Workshop](https://tinhouse.com/workshop/summer-workshop/) under Lesley Nneka Arimah, July 2022
+- Fiction reader at [*Okay Donkey Mag*](https://okaydonkeymag.com/), Jan 2022--Current
+- Poetry reader at [*Anomaly Journal*](https://anmly.org/), Nov 2021--Current
+
+
+

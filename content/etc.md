@@ -3,7 +3,7 @@ title: "&Etc"
 date: 2021-02-16T12:08:55-08:00
 draft: false
 menu: "main"
-weight: 5
+weight: 4
 ---
 
 # Lists
