@@ -36,6 +36,9 @@ weight = 1
   # the value of name should be an valid font awesome icon name (brands type)
   # https://fontawesome.com/icons?d=gallery&s=brands
   [[params.social]]
+    name = "linkedin"
+    link = "https://www.linkedin.com/in/lrzhou/"
+  [[params.social]]
     name = "twitter-square"
     link = "https://twitter.com/lrenazhou"
   [[params.social]]
