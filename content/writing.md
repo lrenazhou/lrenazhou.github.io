@@ -6,6 +6,10 @@ menu: "main"
 weight: 2
 ---
 
+# 2022
+
+- "Loquats" in *No Tokens Journal* (forthcoming)
+
 # 2021
 
 - "[Rabbit, rabbit, rabbit](https://www.tinymolecules.com/issues/ten#lucy-zhou)" in *Tiny Molecules* (fiction, online)
