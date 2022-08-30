@@ -13,5 +13,10 @@ weight: 3
 - Fiction reader at [*Okay Donkey Magazine*](https://okaydonkeymag.com/), Jan 2022--Current
 - Poetry reader at [*Anomaly Journal*](https://anmly.org/), Nov 2021--Current
 
+# Education
+
+- English B.A., Computer Science B.A. at Brown University, 2013-2017
+
+
 
 

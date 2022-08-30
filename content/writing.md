@@ -6,24 +6,16 @@ menu: "main"
 weight: 2
 ---
 
-# 2022
+# Selected Publications
 
-- "Loquats" in *No Tokens Journal* (forthcoming)
+- "Cara" in *Nat. Brut*, forthcoming
+- "Loquats" in *No Tokens Journal*, forthcoming
+- ["Techno Show"](https://xraylitmag.com/techno-show-by-lucy-zhou/) in *X-R-A-Y Literary Magazine*, August 2021
+- ["Schrödinger's Cat"](https://barrenmagazine.com/schrodingers-cat/) in *Barren Magazine*, August 2021
+- ["A Happy Ending"](https://www.havehashad.com/hadposts/a-happy-ending) in *HAD*, July 2021
+- ["bone orchard"](https://rejection-letters.com/2021/07/12/bone-orchard-lucy-zhou/) in *Rejection Letters*, July 2021
 
-# 2021
+# Honors
 
-- "[Rabbit, rabbit, rabbit](https://www.tinymolecules.com/issues/ten#lucy-zhou)" in *Tiny Molecules* (fiction, online)
-- "[Techno Show](https://xraylitmag.com/techno-show-by-lucy-zhou/)" in *X-R-A-Y Literary Magazine* (fiction, online)
-- "[Schrödinger's Cat](https://barrenmagazine.com/schrodingers-cat/)" in *Barren Magazine* (fiction, online) *Nominated for Pushcart Prize
-- "[A Happy Ending](https://www.havehashad.com/hadposts/a-happy-ending)" in HAD (fiction, online)
-- "[Crater](https://crowcrosskeys.com/2021/07/28/crater-lucy-zhou/)" in *Crow & Cross Keys* (fiction, online)
-- "[bone orchard](https://rejection-letters.com/2021/07/12/bone-orchard-lucy-zhou/)" in *Rejection Letters* (poetry, online)
-- "[Father and Son](https://www.sublunaryreview.com/home/father-and-son)" in *Sublunary Review* (fiction, online)
-<!--{#
-- "[Excavation](https://www.wrongdoingmag.com/spring-2021.html)" in *Wrongdoing Magazine* (poetry, print & online)
-#}-->
-
-# 2020
-
+- [2021 Pushchart Prize Nomination](https://barrenmagazine.com/awards/) for "Schrödinger's Cat" by *Barren Magazine*
 - Honorable Mention for the **2020 Felicia Farr Lemmon Poetry Prize** from the Academy of American Poets
-- "Senescence" and "Stability is Just a Dulling" in *Forum Magazine* (poetry, print)
