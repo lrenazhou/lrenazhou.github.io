@@ -11,7 +11,7 @@ weight: 3
 - [Tin House Summer Workshop](https://tinhouse.com/workshop/summer-workshop/) under Lesley Nneka Arimah, July 2022
 - [VONA Summer Workshop](https://www.vonavoices.org/summer-2022-workshops-open) under Mathangi Subramanian, June 2022
 - Fiction reader at [*Okay Donkey Magazine*](https://okaydonkeymag.com/), Jan 2022--Current
-- Poetry reader at [*Anomaly Journal*](https://anmly.org/), Nov 2021--Current
+- Assistant poetry editor at [*Anomaly Journal*](https://anmly.org/), Nov 2021--Current
 
 # Education
 
