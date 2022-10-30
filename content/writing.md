@@ -8,7 +8,7 @@ weight: 2
 
 # Selected Publications
 
-- "mine" in *The Offing*, forthcoming
+- "Mine" in *The Offing*, forthcoming
 - "Cara" in *Nat. Brut*, forthcoming
 - ["Loquats"](https://notokensjournal.com/fiction/loquats/) in *No Tokens Journal*, forthcoming
 - ["Techno Show"](https://xraylitmag.com/techno-show-by-lucy-zhou/) in *X-R-A-Y Literary Magazine*, August 2021
