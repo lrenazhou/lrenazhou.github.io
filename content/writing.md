@@ -8,8 +8,9 @@ weight: 2
 
 # Selected Publications
 
+- "mine" in *The Offing*, forthcoming
 - "Cara" in *Nat. Brut*, forthcoming
-- "Loquats" in *No Tokens Journal*, forthcoming
+- ["Loquats"](https://notokensjournal.com/fiction/loquats/) in *No Tokens Journal*, forthcoming
 - ["Techno Show"](https://xraylitmag.com/techno-show-by-lucy-zhou/) in *X-R-A-Y Literary Magazine*, August 2021
 - ["Schrödinger's Cat"](https://barrenmagazine.com/schrodingers-cat/) in *Barren Magazine* Issue 19, August 2021
 - ["A Happy Ending"](https://www.havehashad.com/hadposts/a-happy-ending) in *HAD*, July 2021
