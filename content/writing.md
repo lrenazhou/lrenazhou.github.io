@@ -8,8 +8,8 @@ weight: 2
 
 # Selected Publications
 
-- "Mine" in *The Offing*, forthcoming
 - "Cara" in *Nat. Brut*, forthcoming
+- ["Mine"](https://theoffingmag.com/micro/mine-micro/) in *The Offing*, forthcoming
 - ["Loquats"](https://notokensjournal.com/fiction/loquats/) in *No Tokens Journal*, October 2022
 - ["Techno Show"](https://xraylitmag.com/techno-show-by-lucy-zhou/) in *X-R-A-Y Literary Magazine*, August 2021
 - ["Schrödinger's Cat"](https://barrenmagazine.com/schrodingers-cat/) in *Barren Magazine* Issue 19, August 2021
