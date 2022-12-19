@@ -8,9 +8,9 @@ weight: 2
 
 # Selected Publications
 
-- "Cara" in *Nat. Brut*, forthcoming
+- ["Cara"](https://www.natbrut.com/lucy-zhou) in *Nat. Brut* Issue 16, December 2022
 - ["Mine"](https://theoffingmag.com/micro/mine-micro/) in *The Offing*, November 2022
-- ["Loquats"](https://notokensjournal.com/fiction/loquats/) in *No Tokens Journal*, October 2022
+- ["Loquats"](https://notokensjournal.com/fiction/loquats/) in *No Tokens Journal* Issue 10, October 2022
 - ["Techno Show"](https://xraylitmag.com/techno-show-by-lucy-zhou/) in *X-R-A-Y Literary Magazine*, August 2021
 - ["Schrödinger's Cat"](https://barrenmagazine.com/schrodingers-cat/) in *Barren Magazine* Issue 19, August 2021
 - ["A Happy Ending"](https://www.havehashad.com/hadposts/a-happy-ending) in *HAD*, July 2021
