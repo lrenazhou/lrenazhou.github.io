@@ -18,5 +18,6 @@ weight: 2
 
 # Honors
 
+- 2023 Periplus Fellowship Finalist
 - [2021 Pushchart Prize Nomination](https://barrenmagazine.com/awards/) for "Schrödinger's Cat" by *Barren Magazine*
 - Honorable Mention for the **2020 Felicia Farr Lemmon Poetry Prize** from the Academy of American Poets
