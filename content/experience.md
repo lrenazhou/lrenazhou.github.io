@@ -8,6 +8,7 @@ weight: 3
 
 # Experience
 
+- [CRIT](https://crit.works/) under Tony Tulathimutte, March 2023
 - [Tin House Summer Workshop](https://tinhouse.com/workshop/summer-workshop/) under Lesley Nneka Arimah, July 2022
 - [VONA Summer Workshop](https://www.vonavoices.org/summer-2022-workshops-open) under Mathangi Subramanian, June 2022
 - Fiction reader at [*Okay Donkey Magazine*](https://okaydonkeymag.com/), Jan 2022--Current
