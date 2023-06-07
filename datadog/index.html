@@ -148,14 +148,52 @@ class CustomMyMetricCheck(AgentCheck):
         self.gauge(&#39;my_metric&#39;, random_num)
 </code></pre><ol start="4">
 <li><img src="/images/1_4_my_metric_interval_change.png" alt="my_metric interval change"></li>
-<li>You modify the <code>min_collection_interval</code> parameter in the Agent check <code>yaml</code> file.</li>
+<li>You modify the <code>min_collection_interval</code> parameter in the Agent check YAML file.</li>
 </ol>
 <h2 id="exercise-2-visualizing-data">Exercise 2: Visualizing Data</h2>
 <ol>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Create a new dashboard curl request:</li>
+</ol>
+<pre tabindex="0"><code>curl --location &#39;https://us5.datadoghq.com/api/v1/dashboard&#39; \
+--header &#39;Content-Type: application/json&#39; \
+--header &#39;Accept: application/json&#39; \
+--data &#39;{
+  &#34;title&#34;: &#34;Lucy&#39;\&#39;&#39;s metrics dashboard&#34;,
+  &#34;widgets&#34;: [
+        {
+          &#34;definition&#34;: {
+                &#34;title&#34;: &#34;my_metric&#34;, 
+                &#34;title_size&#34;: &#34;16&#34;, 
+                &#34;title_align&#34;: &#34;left&#34;,
+                &#34;type&#34;: &#34;timeseries&#34;,
+                &#34;requests&#34;: [
+                  {
+                        &#34;q&#34;: &#34;my_metric{host:docker-desktop}&#34;
+                  }
+                ]
+            }
+          },
+          {
+            &#34;definition&#34;: {
+            &#34;title&#34;: &#34;Anomalous Postgres commits&#34;, 
+            &#34;title_size&#34;: &#34;16&#34;, 
+            &#34;title_align&#34;: &#34;left&#34;,   
+            &#34;type&#34;: &#34;timeseries&#34;,
+            &#34;requests&#34;: [
+                {
+                    &#34;q&#34;: &#34;anomalies(postgresql.commits{host:Lucys-MBP}, &#39;\&#39;&#39;basic&#39;\&#39;&#39;, 2)&#34;
+                }
+              ]
+            }
+         }
+  ],
+  &#34;layout_type&#34;: &#34;ordered&#34;
+}&#39;
+</code></pre><p>Shared dashboard URL: <a href="https://p.us5.datadoghq.com/sb/f4085cf8-fec9-11ed-967f-da7ad0900005-c033530cf1662ce22dd9fc6a90d51808">https://p.us5.datadoghq.com/sb/f4085cf8-fec9-11ed-967f-da7ad0900005-c033530cf1662ce22dd9fc6a90d51808</a></p>
+<ol start="2">
+<li><img src="/images/2_2_past_5_min.png" alt="Host Map with tags"></li>
+<li><img src="/images/2_3_send_snapshot.png" alt="send_snapshot"></li>
+<li>The Anomaly graph displays a gray band that shows the expected behavior of the number of transactions that have been committed in the Postgres database, with anomalies, or points with a standard deviation of 2 or greater, highlighted in red.</li>
 </ol>
 <h2 id="exercise-3-getting-started">Exercise 3: Getting Started</h2>
 
