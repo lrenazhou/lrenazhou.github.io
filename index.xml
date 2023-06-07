@@ -13,7 +13,7 @@
       <pubDate>Tue, 16 Feb 2021 12:05:20 -0800</pubDate>
       
       <guid>//www.lrenazhou.com/writing/</guid>
-      <description>Selected Publications  &amp;ldquo;Cara&amp;rdquo; in Nat. Brut Issue 16, December 2022 &amp;ldquo;Mine&amp;rdquo; in The Offing, November 2022 &amp;ldquo;Loquats&amp;rdquo; in No Tokens Journal Issue 10, October 2022 &amp;ldquo;Techno Show&amp;rdquo; in X-R-A-Y Literary Magazine, August 2021 &amp;ldquo;Schrödinger&amp;rsquo;s Cat&amp;rdquo; in Barren Magazine Issue 19, August 2021 &amp;ldquo;A Happy Ending&amp;rdquo; in HAD, July 2021 &amp;ldquo;bone orchard&amp;rdquo; in Rejection Letters, July 2021  Honors  2023 Periplus Fellowship Finalist 2021 Pushchart Prize Nomination for &amp;ldquo;Schrödinger&amp;rsquo;s Cat&amp;rdquo; by Barren Magazine Honorable Mention for the 2020 Felicia Farr Lemmon Poetry Prize from the Academy of American Poets  </description>
+      <description>Selected Publications &amp;ldquo;Cara&amp;rdquo; in Nat. Brut Issue 16, December 2022 &amp;ldquo;Mine&amp;rdquo; in The Offing, November 2022 &amp;ldquo;Loquats&amp;rdquo; in No Tokens Journal Issue 10, October 2022 &amp;ldquo;Techno Show&amp;rdquo; in X-R-A-Y Literary Magazine, August 2021 &amp;ldquo;Schrödinger&amp;rsquo;s Cat&amp;rdquo; in Barren Magazine Issue 19, August 2021 &amp;ldquo;A Happy Ending&amp;rdquo; in HAD, July 2021 &amp;ldquo;bone orchard&amp;rdquo; in Rejection Letters, July 2021 Honors 2023 PEN Emerging Voices Fellow 2023 Periplus Fellowship Finalist 2021 Pushchart Prize Nomination for &amp;ldquo;Schrödinger&amp;rsquo;s Cat&amp;rdquo; by Barren Magazine Honorable Mention for the 2020 Felicia Farr Lemmon Poetry Prize from the Academy of American Poets </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Tue, 16 Feb 2021 12:08:55 -0800</pubDate>
       
       <guid>//www.lrenazhou.com/experience/</guid>
-      <description>Experience  CRIT under Tony Tulathimutte, March 2023 Tin House Summer Workshop under Lesley Nneka Arimah, July 2022 VONA Summer Workshop under Mathangi Subramanian, June 2022 Fiction reader at Okay Donkey Magazine, Jan 2022&amp;ndash;Current Assistant poetry editor at Anomaly Journal, Nov 2021&amp;ndash;Current  Education  English B.A., Computer Science B.A. at Brown University, 2013-2017  </description>
+      <description>Experience CRIT under Tony Tulathimutte, March 2023 Tin House Summer Workshop under Lesley Nneka Arimah, July 2022 VONA Summer Workshop under Mathangi Subramanian, June 2022 Fiction reader at Okay Donkey Magazine, Jan 2022&amp;ndash;Current Assistant poetry editor at Anomaly Journal, Nov 2021&amp;ndash;Current Education English B.A., Computer Science B.A. at Brown University, 2013-2017 </description>
     </item>
     
     <item>
@@ -32,7 +32,16 @@
       
       <guid>//www.lrenazhou.com/etc/</guid>
       <description>Lists Inspiration the moon, the body, body horror, bodies of water, holes, desire, yearning, the strange &amp;amp; supernatural &amp;amp; surrealist, chinese folklore, the politics of revolution &amp;amp; solidarity, becoming &amp;amp; undoing, eggs, pills, computers, computer-generated poetry, simulations
-Books I Like  I&amp;rsquo;m Waiting For You by Kim Bo-young: a speculative short story collection translated from Korean. Time travel, fallen gods, love that transcends time and place, it has it all! Broken Stars by various authors: an anthology of Chinese Sci-Fi translated into English by the Hugo Award-winning Ken Liu.</description>
+Books I Like I&amp;rsquo;m Waiting For You by Kim Bo-young: a speculative short story collection translated from Korean. Time travel, fallen gods, love that transcends time and place, it has it all! Broken Stars by various authors: an anthology of Chinese Sci-Fi translated into English by the Hugo Award-winning Ken Liu.</description>
+    </item>
+    
+    <item>
+      <title>Datadog take-home assignment</title>
+      <link>//www.lrenazhou.com/datadog/</link>
+      <pubDate>Tue, 16 Feb 2021 12:08:55 -0800</pubDate>
+      
+      <guid>//www.lrenazhou.com/datadog/</guid>
+      <description>Exercise 1: Collecting Metrics Postgres conf.yaml: init_config: instances: ## @param host - string - required ## The hostname to connect to. ## NOTE: Even if the server name is &amp;#34;localhost&amp;#34;, the agent connects to ## PostgreSQL using TCP/IP, unless you also provide a value for the sock key. # - host: localhost ## @param port - integer - required ## Port to use when connecting to PostgreSQL. # port: 5432 ## @param user - string - required ## Datadog Username created to connect to PostgreSQL.</description>
     </item>
     
   </channel>
