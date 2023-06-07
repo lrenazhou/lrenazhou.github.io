@@ -81,13 +81,54 @@ class CustomMyMetricCheck(AgentCheck):
 ```
 
 4. ![my_metric interval change](/images/1_4_my_metric_interval_change.png)
-5. You modify the `min_collection_interval` parameter in the Agent check `yaml` file.
+5. You modify the `min_collection_interval` parameter in the Agent check YAML file.
 
 ## Exercise 2: Visualizing Data
 
-1. 
-2. 
-3. 
-4. 
+1. Create a new dashboard curl request:
+
+```
+curl --location 'https://us5.datadoghq.com/api/v1/dashboard' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json' \
+--data '{
+  "title": "Lucy'\''s metrics dashboard",
+  "widgets": [
+        {
+          "definition": {
+                "title": "my_metric", 
+                "title_size": "16", 
+                "title_align": "left",
+                "type": "timeseries",
+                "requests": [
+                  {
+                        "q": "my_metric{host:docker-desktop}"
+                  }
+                ]
+            }
+          },
+          {
+            "definition": {
+            "title": "Anomalous Postgres commits", 
+            "title_size": "16", 
+            "title_align": "left",   
+            "type": "timeseries",
+            "requests": [
+                {
+                    "q": "anomalies(postgresql.commits{host:Lucys-MBP}, '\''basic'\'', 2)"
+                }
+              ]
+            }
+         }
+  ],
+  "layout_type": "ordered"
+}'
+```
+
+Shared dashboard URL: https://p.us5.datadoghq.com/sb/f4085cf8-fec9-11ed-967f-da7ad0900005-c033530cf1662ce22dd9fc6a90d51808
+
+2. ![Host Map with tags](/images/2_2_past_5_min.png)
+3. ![send_snapshot](/images/2_3_send_snapshot.png)
+4. The Anomaly graph displays a gray band that shows the expected behavior of the number of transactions that have been committed in the Postgres database, with anomalies, or points with a standard deviation of 2 or greater, highlighted in red.
 
 ## Exercise 3: Getting Started
