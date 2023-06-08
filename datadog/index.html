@@ -152,11 +152,13 @@ class CustomMyMetricCheck(AgentCheck):
 </ol>
 <h2 id="exercise-2-visualizing-data">Exercise 2: Visualizing Data</h2>
 <ol>
-<li>Create a new dashboard curl request:</li>
+<li>I used Postman to create a new dashboard using the following curl request:</li>
 </ol>
 <pre tabindex="0"><code>curl --location &#39;https://us5.datadoghq.com/api/v1/dashboard&#39; \
 --header &#39;Content-Type: application/json&#39; \
---header &#39;Accept: application/json&#39; \
+--header &#39;Accept: application/json&#39; \ 
+--header &#39;api_key: &lt;DATADOG API KEY&gt;&#39; \
+--header &#39;application_key: &lt;DATADOG APPLICATION KEY&gt;&#39; \
 --data &#39;{
   &#34;title&#34;: &#34;Lucy&#39;\&#39;&#39;s metrics dashboard&#34;,
   &#34;widgets&#34;: [
@@ -195,7 +197,51 @@ class CustomMyMetricCheck(AgentCheck):
 <li><img src="/images/2_3_send_snapshot.png" alt="send_snapshot"></li>
 <li>The Anomaly graph displays a gray band that shows the expected behavior of the number of transactions that have been committed in the Postgres database, with anomalies, or points with a standard deviation of 2 or greater, highlighted in red.</li>
 </ol>
-<h2 id="exercise-3-getting-started">Exercise 3: Getting Started</h2>
+<h2 id="exercise-3-getting-started-with-dogpush">Exercise 3: Getting started with DogPush</h2>
+<p><a href="https://github.com/trueaccord/DogPush">DogPush</a> is a Python library that enables you to manage Datadog monitors through YAML files. With DogPush, you can use source control to track and review changes to your monitors, notify your teams, and mute monitors within set time frames, such as outside of business hours.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before installing DogPush:</p>
+<ul>
+<li>Install the <a href="https://docs.datadoghq.com/getting_started/agent/">Datadog Agent</a>.</li>
+<li>Install <a href="https://www.python.org/downloads/">Python</a> 3.7+.</li>
+<li>Generate valid Datadog API and Application keys. Find your keys under <a href="https://app.datadoghq.com/account/settings#api">Datadog API Settings</a>.</li>
+</ul>
+<h3 id="install">Install</h3>
+<p>Install DogPush using one of two methods:</p>
+<ul>
+<li><a href="#pip">pip</a></li>
+<li><a href="#docker">Docker</a></li>
+</ul>
+<h4 id="pip">pip</h4>
+<p>Before installing DogPush, install and run the latest version of <a href="https://pip.pypa.io/en/stable/cli/pip_install/">pip</a>:</p>
+<pre tabindex="0"><code>pip install --upgrade pip
+</code></pre><p>Then, install DogPush using pip:</p>
+<pre tabindex="0"><code>pip install dogpush
+</code></pre><h4 id="docker">Docker</h4>
+<p>To install DogPush using <a href="https://docs.docker.com/get-docker/">Docker</a>, pull the DogPush Docker image:</p>
+<pre tabindex="0"><code>docker pull trueaccord/dogpush
+</code></pre><p><strong>Note:</strong> The DogPush image is only compatible with AMD64 or Intel 64-bit architecture.</p>
+<p>Skip ahead to the next section to create the <code>config.yaml file</code>. Then, run Docker run and pass in the following arguments:</p>
+<ul>
+<li>The path of the <code>config</code> directory that contains your configuration YAML files.</li>
+<li>The path of <code>config.yaml</code>.</li>
+</ul>
+<p>This ensures that the Docker container can access the configuration YAML files.</p>
+<pre tabindex="0"><code>docker run --rm -v /path/to/config:/config trueaccord/dogpush -c /config/config.yaml diff
+</code></pre><h3 id="setup">Setup</h3>
+<p>DogPush manages your Datadog monitors through configuration YAML files. The most important of them, <code>config.yaml</code>, defines your Datadog API and Application keys, references your alert configuration YAML files, and sets up teams, mute tags, and more.</p>
+<p>To set up DogPush:</p>
+<ol>
+<li>Create the config.yaml.</li>
+<li></li>
+</ol>
+<h3 id="further-reading">Further reading</h3>
+<p>For further reading, see the following resources:</p>
+<ul>
+<li><a href="https://github.com/trueaccord/DogPush/blob/master/README.md">DogPush README</a></li>
+<li><a href="https://docs.datadoghq.com/getting_started/monitors/">Getting Started with Monitors</a></li>
+<li><a href="https://docs.datadoghq.com/monitors/">Alerting</a></li>
+</ul>
 
   
   </div>
