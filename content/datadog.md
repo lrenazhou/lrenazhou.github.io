@@ -127,7 +127,7 @@ curl --location 'https://us5.datadoghq.com/api/v1/dashboard' \
 }'
 ```
 
-Shared dashboard URL: https://p.us5.datadoghq.com/sb/f4085cf8-fec9-11ed-967f-da7ad0900005-c033530cf1662ce22dd9fc6a90d51808
+Shared dashboard URL: https://p.us5.datadoghq.com/sb/f4085cf8-fec9-11ed-967f-da7ad0900005-15f84545fbc0e1fd439335dc763d1b85
 
 2. ![Host Map with tags](/images/2_2_past_5_min.png)
 3. ![send_snapshot](/images/2_3_send_snapshot.png)
