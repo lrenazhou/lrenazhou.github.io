@@ -85,12 +85,14 @@ class CustomMyMetricCheck(AgentCheck):
 
 ## Exercise 2: Visualizing Data
 
-1. Create a new dashboard curl request:
+1. I used Postman to create a new dashboard using the following curl request: 
 
 ```
 curl --location 'https://us5.datadoghq.com/api/v1/dashboard' \
 --header 'Content-Type: application/json' \
---header 'Accept: application/json' \
+--header 'Accept: application/json' \ 
+--header 'api_key: eecae4a47a5d8b56fdcfd2db9fd18129' \
+--header 'application_key: 1850bd96c57bcff3129c6bf55545d3b491f6e26b' \
 --data '{
   "title": "Lucy'\''s metrics dashboard",
   "widgets": [
@@ -131,4 +133,76 @@ Shared dashboard URL: https://p.us5.datadoghq.com/sb/f4085cf8-fec9-11ed-967f-da7
 3. ![send_snapshot](/images/2_3_send_snapshot.png)
 4. The Anomaly graph displays a gray band that shows the expected behavior of the number of transactions that have been committed in the Postgres database, with anomalies, or points with a standard deviation of 2 or greater, highlighted in red.
 
-## Exercise 3: Getting Started
+## Exercise 3: Getting started with DogPush
+
+[DogPush](https://github.com/trueaccord/DogPush) is a Python library that enables you to manage Datadog monitors through YAML files. With DogPush, you can use source control to track and review changes to your monitors, notify your teams, and mute monitors within set time frames, such as outside of business hours.
+
+### Prerequisites
+
+Before installing DogPush:
+- Install the [Datadog Agent](https://docs.datadoghq.com/getting_started/agent/).
+- Install [Python](https://www.python.org/downloads/) 3.7+. 
+- Generate valid Datadog API and Application keys. Find your keys under [Datadog API Settings](https://app.datadoghq.com/account/settings#api).
+
+### Install
+
+Install DogPush using one of two methods:
+- [pip](#pip)
+- [Docker](#docker)
+
+#### pip
+
+Before installing DogPush, install and run the latest version of [pip](https://pip.pypa.io/en/stable/cli/pip_install/):
+
+```
+pip install --upgrade pip
+```
+
+Then, install DogPush using pip:
+
+```
+pip install dogpush
+```
+
+#### Docker
+
+To install DogPush using [Docker](https://docs.docker.com/get-docker/), pull the DogPush Docker image:
+
+```
+docker pull trueaccord/dogpush
+```
+
+**Note:** The DogPush image is only compatible with AMD64 or Intel 64-bit architecture.
+
+Skip ahead to the next section to create the `config.yaml file`. Then, run Docker run and pass in the following arguments:
+- The path of the `config` directory that contains your configuration YAML files.
+- The path of `config.yaml`.
+
+This ensures that the Docker container can access the configuration YAML files.
+
+```
+docker run --rm -v /path/to/config:/config trueaccord/dogpush -c /config/config.yaml diff
+```
+
+### Setup
+
+DogPush manages your Datadog monitors through configuration YAML files. The most important of them, `config.yaml`, defines your Datadog API and Application keys, references your alert configuration YAML files, and sets up teams, mute tags, and more.
+
+To set up DogPush:
+1. Create the config.yaml.
+2. 
+
+### Further reading
+
+For further reading, see the following resources:
+- [DogPush README](https://github.com/trueaccord/DogPush/blob/master/README.md)
+- [Getting Started with Monitors](https://docs.datadoghq.com/getting_started/monitors/)
+- [Alerting](https://docs.datadoghq.com/monitors/)
+
+
+
+
+
+
+
+
