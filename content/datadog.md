@@ -91,8 +91,8 @@ class CustomMyMetricCheck(AgentCheck):
 curl --location 'https://us5.datadoghq.com/api/v1/dashboard' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \ 
---header 'api_key: eecae4a47a5d8b56fdcfd2db9fd18129' \
---header 'application_key: 1850bd96c57bcff3129c6bf55545d3b491f6e26b' \
+--header 'api_key: <DATADOG API KEY>' \
+--header 'application_key: <DATADOG APPLICATION KEY>' \
 --data '{
   "title": "Lucy'\''s metrics dashboard",
   "widgets": [
