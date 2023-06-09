@@ -302,7 +302,7 @@ team: []
 
 For more information about notifying your teams, see [Notifications](https://docs.datadoghq.com/monitors/notify/).
 
-#### Optional: Create mute tags
+#### **Optional:** Create mute tags
 
 Create mute tags to mute monitors within set time frames. Each mute tag is defined by the following:
 - `timezone`: localizes the time frame to a specific [timezone](https://docs.python.org/2/library/datetime.html#datetime.datetime.now).
