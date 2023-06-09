@@ -133,7 +133,7 @@ Shared dashboard URL: https://p.us5.datadoghq.com/sb/f4085cf8-fec9-11ed-967f-da7
 3. ![Send snapshot](/images/2_3_send_snapshot.png)
 4. The Anomaly graph displays a gray band that shows the expected behavior of the number of transactions that have been committed in the Postgres database, with anomalies, or points with a standard deviation of 2 or greater, highlighted in red.
 
-## Exercise 3: Getting started with DogPush
+## Exercise 3: Getting Started with DogPush
 
 [DogPush](https://github.com/trueaccord/DogPush) is a Python library that enables you to manage Datadog monitors through YAML files. With DogPush, you can use source control to track and review changes to your monitors, notify your teams, and mute monitors within set time frames, such as outside of business hours.
 
@@ -174,7 +174,7 @@ docker pull trueaccord/dogpush
 
 **Note:** The DogPush image is only compatible with AMD64 or Intel 64-bit architecture.
 
-Skip ahead to the next section to create the `config.yaml` file. Then, run `docker run` and pass in the following arguments:
+Skip ahead to the next section to [create the `config.yaml`](#1-create-configyaml) file. Then, run `docker run` and pass in the following arguments:
 - The path of the `config` directory that contains your configuration YAML files.
 - The path of `config.yaml`.
 
@@ -221,7 +221,7 @@ c. Run `dogpush diff` and pass in your new `config.yaml` as an argument:
 dogpush -c ./config.yaml diff
 ```
 
-`dogpush diff` prints untracked changes across your local `config.yaml` file and remote Datadog monitors. Because `config.yaml` only contains information about your Datadog API and Application keys, all your monitor alerts should appear as untracked in your terminal.
+`dogpush diff` prints untracked changes across your local `config.yaml` file and remote Datadog monitors. Because `config.yaml` currently only contains information about your Datadog API and Application keys, all your monitor alerts should appear as untracked in your terminal.
 
 Now that you have printed your monitor alerts in your local environment, let’s store them in a new `rule_files` YAML file, `my_monitors.yaml`.
 
@@ -233,21 +233,21 @@ a. In the `config` directory, run `dogpush init` to create a new YAML file, `my_
 dogpush -c ./config.yaml init > ./my_monitors.yaml
 ```
 
-b. Add `my_monitors.yaml` as a new `rule_files` entry to `config.yaml`. The `rule_files` entry lists the configuration YAML files that locally store and configure your monitor alerts.
+b. In `config.yaml`, add `my_monitors.yaml` as a new `rule_files` entry. `rule_files` lists the configuration YAML files that locally store and configure your monitor alerts.
 
 ```
 ---
 datadog:
-  api_key: YOUR_API_KEY
-  app_key: YOUR_APP_KEY
+  api_key: <YOUR_API_KEY>
+  app_key: <YOUR_APP_KEY>
 
 rule_files:
-  my_monitors.yaml
+- my_monitors.yaml
 ```
 
 c. Run `dogpush diff` again. It should not print any untracked changes. Your monitor alerts are now in sync across your local `config.yaml` and remote Datadog monitors.
 
-Organize your monitor alerts by creating a separate configuration YAML file for each type of alert. Just add the YAML files to the `rule_files` entry in `config.yaml`.
+You can create separate configuration YAML files grouping together monitor alerts by team, [monitor type](https://docs.datadoghq.com/monitors/types/), or another organizing principle. Just add the YAML files to the `rule_files` entry in `config.yaml`.
 
 **Note:** `rule_files` YAML paths can be relative, absolute, and contain wildcards.
 
@@ -256,8 +256,8 @@ rule_files:
 - rds.yaml
 - ec2.yaml
 - dir1/rules.yaml
-/absolute/path/to/rules.yaml
-path/with/wildcard/*.yaml
+- /absolute/path/to/rules.yaml
+- path/with/wildcard/*.yaml
 ```
 
 #### 3. Define teams for notifications
@@ -272,20 +272,20 @@ a. In your `config.yaml` file, create a new `teams` entry for `eng`. For each mo
 teams:
   eng:
 	notifications:
-  	CRITICAL: '@hipchat-Engineering @victorops-eng'
-  	WARNING: '@eng-alerts@example.com'
+  	  CRITICAL: '@hipchat-Engineering @victorops-eng'
+  	  WARNING: '@eng-alerts@example.com'
 ```
 
 b. Add `team: eng` to the top of the desired `rule_files` YAML file(s). This sets `eng` as the default team for the monitor alerts defined in the YAML file(s).
-- For `CRITICAL` alerts, `@hipchat-Engineering @victorops-eng` are added to the message body of the monitor.
-- For `WARNING` alerts, `@eng-alerts@example.com` is added to the message body of the monitor.
+- For `CRITICAL` alerts, `@hipchat-Engineering @victorops-eng` are added to the monitor message.
+- For `WARNING` alerts, `@eng-alerts@example.com` is added to the monitor message.
 
 c. Add another `teams` entry for `ops`:
 
 ```
 ops:
-    notifications:
-      CRITICAL: '@hipchat-Ops'
+  notifications:
+    CRITICAL: '@hipchat-Ops'
 ```
 
 d. To define both `eng` and `ops` as the default teams for a set of monitor alerts, add the following to the desired `rule_files` YAML file(s):
@@ -311,7 +311,7 @@ Create mute tags to mute monitors within set time frames. Each mute tag is defin
 In this section, we will walk you through how to set up a mute tag that mutes your monitors outside of business hours in US Pacific Time (PST), which we define as before 9 am and after 5 pm on the weekends.
 
 To create a mute tag:
-1. In `config.yaml`, add `not_business_hours` to the `mute_tags` entry:
+1. In `config.yaml`, add `not_business_hours` as a new `mute_tags` entry:
 - Set the `timezone` to `US/Pacific`.
 - Set the `expr` to `now.hour < 9 or now.hour >= 17 or (now.weekday() in (5, 6))`, where [now](https://docs.python.org/2/library/datetime.html#datetime.datetime.now) represents the local date and time in the timezone you set.
 
