@@ -129,8 +129,8 @@ curl --location 'https://us5.datadoghq.com/api/v1/dashboard' \
 
 Shared dashboard URL: https://p.us5.datadoghq.com/sb/f4085cf8-fec9-11ed-967f-da7ad0900005-15f84545fbc0e1fd439335dc763d1b85
 
-2. ![Host Map with tags](/images/2_2_past_5_min.png)
-3. ![send_snapshot](/images/2_3_send_snapshot.png)
+2. ![Past 5 min dashboard](/images/2_2_past_5_min.png)
+3. ![Send snapshot](/images/2_3_send_snapshot.png)
 4. The Anomaly graph displays a gray band that shows the expected behavior of the number of transactions that have been committed in the Postgres database, with anomalies, or points with a standard deviation of 2 or greater, highlighted in red.
 
 ## Exercise 3: Getting started with DogPush
