@@ -144,7 +144,7 @@ __version__ = &#34;1.0.0&#34;
 
 class CustomMyMetricCheck(AgentCheck):
     def check(self, instance):
-        random_num = random.randint(1,100)
+        random_num = random.randint(0,1000)
         self.gauge(&#39;my_metric&#39;, random_num)
 </code></pre><ol start="4">
 <li><img src="/images/1_4_my_metric_interval_change.png" alt="my_metric interval change"></li>
