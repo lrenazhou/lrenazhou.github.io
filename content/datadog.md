@@ -76,7 +76,7 @@ __version__ = "1.0.0"
 
 class CustomMyMetricCheck(AgentCheck):
     def check(self, instance):
-        random_num = random.randint(1,100)
+        random_num = random.randint(0,1000)
         self.gauge('my_metric', random_num)
 ```
 
