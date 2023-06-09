@@ -197,7 +197,7 @@ class CustomMyMetricCheck(AgentCheck):
 <li><img src="/images/2_3_send_snapshot.png" alt="Send snapshot"></li>
 <li>The Anomaly graph displays a gray band that shows the expected behavior of the number of transactions that have been committed in the Postgres database, with anomalies, or points with a standard deviation of 2 or greater, highlighted in red.</li>
 </ol>
-<h2 id="exercise-3-getting-started-with-dogpush">Exercise 3: Getting started with DogPush</h2>
+<h2 id="exercise-3-getting-started-with-dogpush">Exercise 3: Getting Started with DogPush</h2>
 <p><a href="https://github.com/trueaccord/DogPush">DogPush</a> is a Python library that enables you to manage Datadog monitors through YAML files. With DogPush, you can use source control to track and review changes to your monitors, notify your teams, and mute monitors within set time frames, such as outside of business hours.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <p>Before installing DogPush:</p>
@@ -221,7 +221,7 @@ class CustomMyMetricCheck(AgentCheck):
 <p>To install DogPush using <a href="https://docs.docker.com/get-docker/">Docker</a>, pull the DogPush Docker image:</p>
 <pre tabindex="0"><code>docker pull trueaccord/dogpush
 </code></pre><p><strong>Note:</strong> The DogPush image is only compatible with AMD64 or Intel 64-bit architecture.</p>
-<p>Skip ahead to the next section to create the <code>config.yaml</code> file. Then, run <code>docker run</code> and pass in the following arguments:</p>
+<p>Skip ahead to the next section to <a href="#1-create-configyaml">create the <code>config.yaml</code></a> file. Then, run <code>docker run</code> and pass in the following arguments:</p>
 <ul>
 <li>The path of the <code>config</code> directory that contains your configuration YAML files.</li>
 <li>The path of <code>config.yaml</code>.</li>
@@ -252,28 +252,28 @@ datadog:
 </code></pre><p><strong>Note:</strong> If you don’t define your Datadog API and Application keys in <code>config.yaml</code>, DogPush also looks for the environmental variables <code>DATADOG_API_KEY</code> and <code>DATADOG_APP_KEY</code>.</p>
 <p>c. Run <code>dogpush diff</code> and pass in your new <code>config.yaml</code> as an argument:</p>
 <pre tabindex="0"><code>dogpush -c ./config.yaml diff
-</code></pre><p><code>dogpush diff</code> prints untracked changes across your local <code>config.yaml</code> file and remote Datadog monitors. Because <code>config.yaml</code> only contains information about your Datadog API and Application keys, all your monitor alerts should appear as untracked in your terminal.</p>
+</code></pre><p><code>dogpush diff</code> prints untracked changes across your local <code>config.yaml</code> file and remote Datadog monitors. Because <code>config.yaml</code> currently only contains information about your Datadog API and Application keys, all your monitor alerts should appear as untracked in your terminal.</p>
 <p>Now that you have printed your monitor alerts in your local environment, let’s store them in a new <code>rule_files</code> YAML file, <code>my_monitors.yaml</code>.</p>
 <h4 id="2-add-rule_files-yaml-file-to-configyaml">2. Add <code>rule_files</code> YAML file to <code>config.yaml</code></h4>
 <p>a. In the <code>config</code> directory, run <code>dogpush init</code> to create a new YAML file, <code>my_monitors.yaml</code>, that stores the untracked monitor alerts you printed in the last step.</p>
 <pre tabindex="0"><code>dogpush -c ./config.yaml init &gt; ./my_monitors.yaml
-</code></pre><p>b. Add <code>my_monitors.yaml</code> as a new <code>rule_files</code> entry to <code>config.yaml</code>. The <code>rule_files</code> entry lists the configuration YAML files that locally store and configure your monitor alerts.</p>
+</code></pre><p>b. In <code>config.yaml</code>, add <code>my_monitors.yaml</code> as a new <code>rule_files</code> entry. <code>rule_files</code> lists the configuration YAML files that locally store and configure your monitor alerts.</p>
 <pre tabindex="0"><code>---
 datadog:
-  api_key: YOUR_API_KEY
-  app_key: YOUR_APP_KEY
+  api_key: &lt;YOUR_API_KEY&gt;
+  app_key: &lt;YOUR_APP_KEY&gt;
 
 rule_files:
-  my_monitors.yaml
+- my_monitors.yaml
 </code></pre><p>c. Run <code>dogpush diff</code> again. It should not print any untracked changes. Your monitor alerts are now in sync across your local <code>config.yaml</code> and remote Datadog monitors.</p>
-<p>Organize your monitor alerts by creating a separate configuration YAML file for each type of alert. Just add the YAML files to the <code>rule_files</code> entry in <code>config.yaml</code>.</p>
+<p>You can create separate configuration YAML files grouping together monitor alerts by team, <a href="https://docs.datadoghq.com/monitors/types/">monitor type</a>, or another organizing principle. Just add the YAML files to the <code>rule_files</code> entry in <code>config.yaml</code>.</p>
 <p><strong>Note:</strong> <code>rule_files</code> YAML paths can be relative, absolute, and contain wildcards.</p>
 <pre tabindex="0"><code>rule_files:
 - rds.yaml
 - ec2.yaml
 - dir1/rules.yaml
-/absolute/path/to/rules.yaml
-path/with/wildcard/*.yaml
+- /absolute/path/to/rules.yaml
+- path/with/wildcard/*.yaml
 </code></pre><h4 id="3-define-teams-for-notifications">3. Define teams for notifications</h4>
 <p>Define teams to notify the right people about monitor issues.</p>
 <p>To define teams:</p>
@@ -281,17 +281,17 @@ path/with/wildcard/*.yaml
 <pre tabindex="0"><code>teams:
   eng:
 	notifications:
-  	CRITICAL: &#39;@hipchat-Engineering @victorops-eng&#39;
-  	WARNING: &#39;@eng-alerts@example.com&#39;
+  	  CRITICAL: &#39;@hipchat-Engineering @victorops-eng&#39;
+  	  WARNING: &#39;@eng-alerts@example.com&#39;
 </code></pre><p>b. Add <code>team: eng</code> to the top of the desired <code>rule_files</code> YAML file(s). This sets <code>eng</code> as the default team for the monitor alerts defined in the YAML file(s).</p>
 <ul>
-<li>For <code>CRITICAL</code> alerts, <code>@hipchat-Engineering @victorops-eng</code> are added to the message body of the monitor.</li>
-<li>For <code>WARNING</code> alerts, <code>@eng-alerts@example.com</code> is added to the message body of the monitor.</li>
+<li>For <code>CRITICAL</code> alerts, <code>@hipchat-Engineering @victorops-eng</code> are added to the monitor message.</li>
+<li>For <code>WARNING</code> alerts, <code>@eng-alerts@example.com</code> is added to the monitor message.</li>
 </ul>
 <p>c. Add another <code>teams</code> entry for <code>ops</code>:</p>
 <pre tabindex="0"><code>ops:
-    notifications:
-      CRITICAL: &#39;@hipchat-Ops&#39;
+  notifications:
+    CRITICAL: &#39;@hipchat-Ops&#39;
 </code></pre><p>d. To define both <code>eng</code> and <code>ops</code> as the default teams for a set of monitor alerts, add the following to the desired <code>rule_files</code> YAML file(s):</p>
 <pre tabindex="0"><code>team: [eng, ops]
 </code></pre><p>e. If you want don’t want a monitor to be associated with a team, set <code>team</code> to an empty array:</p>
@@ -306,7 +306,7 @@ path/with/wildcard/*.yaml
 <p>In this section, we will walk you through how to set up a mute tag that mutes your monitors outside of business hours in US Pacific Time (PST), which we define as before 9 am and after 5 pm on the weekends.</p>
 <p>To create a mute tag:</p>
 <ol>
-<li>In <code>config.yaml</code>, add <code>not_business_hours</code> to the <code>mute_tags</code> entry:</li>
+<li>In <code>config.yaml</code>, add <code>not_business_hours</code> as a new <code>mute_tags</code> entry:</li>
 </ol>
 <ul>
 <li>Set the <code>timezone</code> to <code>US/Pacific</code>.</li>
