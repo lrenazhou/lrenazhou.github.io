@@ -8,8 +8,9 @@ weight: 3
 
 # Experience
 
-- Fiction reader at [*Okay Donkey Magazine*](https://okaydonkeymag.com/), Jan 2022--Current
-- Assistant poetry editor at [*Anomaly Journal*](https://anmly.org/), Nov 2021--Current
+- Short story editor at [*Intergalactic Gaysians*](https://www.kickstarter.com/projects/intergalacticgayzn/intergalactic-gaysians?ref=8gc7lt&utm_source=substack&utm_medium=email), Oct 2023--Current  
+- Fiction reader at [*Okay Donkey Magazine*](https://okaydonkeymag.com/), Jan 2022--June 2024
+- Assistant poetry editor at [*Anomaly Journal*](https://anmly.org/), Nov 2021--June 2024
 
 # Workshops/Conferences
 
