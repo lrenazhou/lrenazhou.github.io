@@ -24,5 +24,4 @@ the moon, the body, body horror, bodies of water, holes, desire, yearning, the s
 ## Music I Like
 
 - [weighted blanket pop](https://open.spotify.com/playlist/3UAY8IC70TzTFWZtour6Fg?si=ziyU5T-PSriVWDsuy-CCkA): dream/jangle/bedroom pop
-- [lofi hip hop beets](https://open.spotify.com/playlist/2xYf1IOdN0kdsTC1dxXUEu?si=eeBuPzIlQgal_HFOhcaIvg): hip-hop/r&b 
-- [krunk](https://open.spotify.com/playlist/10pOhElmZPOEqJq8WvVj8m?si=Ad8k8TGISseRV3vKFWoOIw): mosh it
+- [lofi hip hop beets](https://open.spotify.com/playlist/2xYf1IOdN0kdsTC1dxXUEu?si=eeBuPzIlQgal_HFOhcaIvg): hip-hop/r&b
