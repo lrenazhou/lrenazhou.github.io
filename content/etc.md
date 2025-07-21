@@ -36,7 +36,7 @@ Other:
 - Blood in My Eye, George Jackson (1972)
 - Marx's Literary Style, Ludovico Silva (1971)
 - Racial Melancholia, Racial Dissociation, David L. Eng & Shinhee Han (2019)
-- Hard Damage, Aria Arber (2019)
+- Hard Damage, Aria Aber (2019)
 
 ## Music I Like
 
