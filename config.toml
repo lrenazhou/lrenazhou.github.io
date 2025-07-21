@@ -39,9 +39,6 @@ weight = 1
     name = "linkedin"
     link = "https://www.linkedin.com/in/lrzhou/"
   [[params.social]]
-    name = "twitter-square"
-    link = "https://twitter.com/lrenazhou"
-  [[params.social]]
     name = "instagram"
     link = "https://www.instagram.com/lrenazhou/"
   [[params.social]]

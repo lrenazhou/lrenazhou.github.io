@@ -8,7 +8,7 @@ weight: 3
 
 # Experience
 
-- Short story editor at [*Intergalactic Gaysians*](https://www.kickstarter.com/projects/intergalacticgayzn/intergalactic-gaysians?ref=8gc7lt&utm_source=substack&utm_medium=email), Oct 2023--Current  
+- Short story editor at [*Intergalactic Gaysians*](https://www.kickstarter.com/projects/intergalacticgayzn/intergalactic-gaysians?ref=8gc7lt&utm_source=substack&utm_medium=email), Oct 2023--August 2025 
 - Fiction reader at [*Okay Donkey Magazine*](https://okaydonkeymag.com/), Jan 2022--June 2024
 - Assistant poetry editor at [*Anomaly Journal*](https://anmly.org/), Nov 2021--June 2024
 
@@ -18,6 +18,10 @@ weight: 3
 - [CRIT](https://crit.works/) under Tony Tulathimutte, March 2023
 - [Tin House Summer Workshop](https://tinhouse.com/workshop/summer-workshop/) under Lesley Nneka Arimah, July 2022
 - [VONA Summer Workshop](https://www.vonavoices.org/summer-2022-workshops-open) under Mathangi Subramanian, June 2022
+
+# Interviews
+
+- [2023 Emerging Voices Fellows: The PEN 10 Interview](https://pen.org/2023-emerging-voices-fellows-the-pen-ten-interview/)
 
 # Education
 
