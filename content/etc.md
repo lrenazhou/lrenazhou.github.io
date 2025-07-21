@@ -13,7 +13,7 @@ weight: 4
 - an incisive article on the [politics of craft](https://proteanmag.com/2023/12/08/notes-on-craft-writing-in-the-hour-of-genocide/), [blunt-force ethnic credibility](https://astra-mag.com/articles/blunt-force-ethnic-credibility/), and the peculiarities of the [historical novel](https://www.thedriftmag.com/past-tense/)
 - Chinese history, revolution, and modernity a la Wang Anyi & Jia Zhangke
 - the strange, terrible, and surrealist a la David Lynch, Roberto Bolaño, & Mariana Enriquez
-- the morning quiet before the trash truck wakes up the neighborhood
+- the morning quiet before a trash truck wakes up the neighborhood
 - a cigarette on the balcony after a night out
 
 ## Books I Like
@@ -48,6 +48,7 @@ Other:
 - Love Deluxe, Sade (1992)
 - On the Corner, Miles Davis (1972)
 - Black Classical Music, Yussef Dayes (2023)
+- 7, Beach House (2018)
 
 Some mildly curated playlists: 
 
