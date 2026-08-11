@@ -1,0 +1,4 @@
+<footer class="colophon">
+  <p class="colophon-name">&copy; {{ now.Format "2006" }} {{ .Site.Params.author | default .Site.Copyright | default .Site.Title }}</p>
+  {{ partial "social.html" . }}
+</footer>

@@ -1,0 +1,31 @@
+{{ $cur := .RelPermalink }}
+<header class="masthead">
+  {{ with .Site.Params.authorImage }}
+    <img class="portrait" src="{{ . | relURL }}" alt="{{ $.Site.Params.author | default $.Site.Title }}"
+         width="200" height="200" decoding="sync" fetchpriority="high">
+  {{ end }}
+  <div class="masthead-body">
+    <a class="wordmark" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">
+      <svg class="icon-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+           stroke-linecap="round" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18"></path>
+      </svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+           stroke-linecap="round" aria-hidden="true">
+        <path d="M5 5l14 14M19 5L5 19"></path>
+      </svg>
+    </button>
+    <nav class="masthead-nav" id="main-nav" aria-label="Main">
+      <ul>
+        {{ range .Site.Menus.main }}
+          {{ $url := .URL | relLangURL }}
+          {{ with .Page }}{{ $url = .RelPermalink }}{{ end }}
+          <li>
+            <a href="{{ $url }}"{{ if eq $cur $url }} class="is-current" aria-current="page"{{ end }}>{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="content">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ .Content }}
+  {{ with .Pages }}
+  <ul class="entry-list">
+    {{ range (sort . "Date" "desc") }}
+      <li class="entry">
+        <a class="entry-title" href="{{ .RelPermalink }}">{{ .Title | default "Untitled" }}</a>
+        <time class="entry-year" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006" }}</time>
+      </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</article>
+{{ end }}

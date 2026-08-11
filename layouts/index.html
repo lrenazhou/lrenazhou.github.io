@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="content home">
+  {{ with .Content }}
+    {{ . }}
+  {{ else }}
+    {{ with .Site.Params.description }}
+      <p class="lede">{{ . }}</p>
+    {{ end }}
+  {{ end }}
+
+  <section class="elsewhere" aria-labelledby="elsewhere-heading">
+    <h2 id="elsewhere-heading" class="section-rule">Elsewhere</h2>
+    {{ partial "social.html" . }}
+  </section>
+</article>
+{{ end }}
