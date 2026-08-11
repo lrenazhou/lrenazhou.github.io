@@ -1,7 +1,6 @@
 baseURL = "//www.lrenazhou.com/"
 languageCode = "en-us"
 title = "lrenazhou"
-theme = "hugo-theme-cactus"
 copyright = "Lucy Zhou"
 
 # summaryLength = 2
