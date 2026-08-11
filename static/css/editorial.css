@@ -125,6 +125,12 @@ body {
   display: block;
   border-radius: 50%;
   filter: grayscale(1);
+  /* While the file is in flight the <img> box would render its alt text.
+     Transparent text hides that flash — the alt attribute is untouched, so
+     screen readers and a failed load still get it — and the tint gives the
+     circle something to be in the meantime. */
+  background: var(--rule-soft);
+  color: transparent;
 }
 
 /* Hover-to-colour only where a real pointer exists. On touch, a tap sets a
