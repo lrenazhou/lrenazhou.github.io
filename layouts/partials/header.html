@@ -1,0 +1,21 @@
+{{ $cur := .RelPermalink }}
+<header class="masthead">
+  {{ with .Site.Params.authorImage }}
+    <img class="portrait" src="{{ . | relURL }}" alt="{{ $.Site.Params.author | default $.Site.Title }}"
+         width="200" height="200" decoding="sync" fetchpriority="high">
+  {{ end }}
+  <div class="masthead-body">
+    <a class="wordmark" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    <nav class="masthead-nav" aria-label="Main">
+      <ul>
+        {{ range .Site.Menus.main }}
+          {{ $url := .URL | relLangURL }}
+          {{ with .Page }}{{ $url = .RelPermalink }}{{ end }}
+          <li>
+            <a href="{{ $url }}"{{ if eq $cur $url }} class="is-current" aria-current="page"{{ end }}>{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

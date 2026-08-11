@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" class="no-js">
+{{ partial "head.html" . }}
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="4.2"></circle>
+      <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+    </svg>
+  </button>
+
+  <div class="page">
+    {{ partial "header.html" . }}
+    <main id="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+  </div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector(".theme-toggle");
+      if (!button) return;
+
+      var system = window.matchMedia("(prefers-color-scheme: dark)");
+
+      function current() {
+        var set = root.getAttribute("data-theme");
+        return set === "light" || set === "dark" ? set : (system.matches ? "dark" : "light");
+      }
+
+      function label() {
+        var dark = current() === "dark";
+        button.setAttribute("aria-pressed", String(dark));
+        button.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+      }
+
+      button.addEventListener("click", function () {
+        var next = current() === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("theme", next); } catch (e) {}
+        label();
+      });
+
+      // With no stored choice, keep following the system if it changes mid-visit.
+      system.addEventListener("change", function () {
+        var stored = null;
+        try { stored = localStorage.getItem("theme"); } catch (e) {}
+        if (stored !== "light" && stored !== "dark") label();
+      });
+
+      label();
+    })();
+  </script>
+</body>
+</html>

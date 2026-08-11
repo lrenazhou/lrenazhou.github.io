@@ -20,6 +20,8 @@ weight = 1
 
 [params]
 
+  author = "Lucy Zhou" # shown as the wordmark in the masthead
+  authorImage = "images/author.png" # masthead portrait; remove this line to hide it
   colortheme = "white"
   rss = true # generate rss feed. default value is false
 
@@ -42,8 +44,8 @@ weight = 1
     name = "instagram"
     link = "https://www.instagram.com/lrenazhou/"
   [[params.social]]
-  	name = "font-awesome"
-  	link = "https://letterboxd.com/lrzhou1010/"
+    name = "letterboxd"
+    link = "https://letterboxd.com/lrzhou1010/"
   [[params.social]]
     name = "email"
     link = "lrzhou1010@gmail.com"

@@ -1,0 +1,17 @@
+{{ if isset .Site.Params "social" }}
+<ul class="social">
+  {{ range .Site.Params.social }}
+    {{ $label := .name | title }}
+    {{ $href := .link }}
+    {{ if eq .name "email" }}
+      {{ $label = "Email" }}
+      {{ $href = printf "mailto:%s" .link }}
+    {{ else if eq .name "font-awesome" }}
+      {{ $label = "Letterboxd" }}
+    {{ else if eq .name "linkedin" }}
+      {{ $label = "LinkedIn" }}
+    {{ end }}
+    <li><a href="{{ $href }}"{{ if ne $label "Email" }} target="_blank" rel="noopener me"{{ end }}>{{ $label }}</a></li>
+  {{ end }}
+</ul>
+{{ end }}

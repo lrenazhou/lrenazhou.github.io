@@ -1,0 +1,34 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ $name := .Site.Params.author | default .Site.Title }}
+  <title>{{ if .IsPage }}{{ .Title }} &middot; {{ end }}{{ $name }}</title>
+  {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+  <meta name="robots" content="all,follow">
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+
+  <link rel="stylesheet" href="{{ "css/editorial.css" | absURL }}">
+  {{ with .Site.Params.authorImage }}
+    <link rel="preload" as="image" href="{{ . | relURL }}">
+  {{ end }}
+  {{ range .Site.Params.css }}<link rel="stylesheet" href="{{ . | absURL }}">{{ end }}
+
+  <link rel="icon" type="image/png" href="{{ "images/lemon.png" | absURL }}">
+
+  {{/* Runs before first paint so a stored choice never flashes the other theme. */}}
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.remove("no-js");
+      try {
+        var stored = localStorage.getItem("theme");
+        if (stored === "light" || stored === "dark") root.setAttribute("data-theme", stored);
+      } catch (e) {}
+    })();
+  </script>
+
+  {{ if .Site.Params.rss }}{{ with .OutputFormats.Get "RSS" }}
+    {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
+  {{ end }}{{ end }}
+</head>
