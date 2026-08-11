@@ -14,6 +14,7 @@
   --link:       #0d7d55; /* brighter, higher-chroma jade — links */
   --link-hover: #0a6044;
   --link-rule:  #a3cfba; /* link underlines */
+  --shadow:     rgba(27, 33, 28, .20);
 
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
            "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
@@ -35,7 +36,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --paper:     #151a16;
+    --paper:     #10130f;
     --ink:       #e6eae2;
     --muted:     #98a095;
     --rule:      #2e352f;
@@ -44,12 +45,13 @@
     --link:      #3fd39a;
     --link-hover:#6ee4b8;
     --link-rule: #2c5a47;
+    --shadow:    rgba(0, 0, 0, .55);
   }
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper:     #151a16;
+  --paper:     #10130f;
   --ink:       #e6eae2;
   --muted:     #98a095;
   --rule:      #2e352f;
@@ -58,6 +60,7 @@
   --link:      #3fd39a;
   --link-hover:#6ee4b8;
   --link-rule: #2c5a47;
+  --shadow:    rgba(0, 0, 0, .55);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -172,10 +175,7 @@ body {
 /* No JavaScript, no working button — hide it rather than show a dead control. */
 .no-js .theme-toggle { display: none; }
 
-/* Narrow viewports: keep the masthead clear of the fixed button. */
-@media (max-width: 36rem) {
-  .masthead { padding-right: 2.4rem; }
-}
+.nav-toggle { display: none; }
 
 .wordmark {
   display: inline-block;
@@ -210,6 +210,92 @@ body {
 }
 .masthead-nav a:hover { color: var(--ink); }
 .masthead-nav a.is-current { color: var(--ink); }
+
+/* --- mobile nav ---------------------------------------------------------- */
+/* Must stay AFTER the base .masthead-nav rules above: media queries add no
+   specificity, so with equal selectors the later block wins. */
+
+@media (max-width: 36rem) {
+  /* Portrait, wordmark and button all centre on one row. The expanded nav is
+     taken out of flow (below) so opening it can't change this row's height. */
+  .masthead {
+    position: relative;
+    padding-right: 2.4rem;
+    align-items: center;
+  }
+
+  /* Wordmark and button become flex siblings so they centre on each other. */
+  .masthead-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 0 1.1rem;
+    padding: .2rem .4rem;
+    background: none;
+    border: 0;
+    color: var(--accent);
+    cursor: pointer;
+  }
+  .nav-toggle svg { width: 1.4rem; height: 1.4rem; display: block; }
+  .nav-toggle .icon-close { display: none; }
+  .nav-toggle[aria-expanded="true"] .icon-bars  { display: none; }
+  .nav-toggle[aria-expanded="true"] .icon-close { display: block; }
+
+  /* State lives on the button's aria-expanded — the nav is its next sibling,
+     so no extra class is needed and the accessible state can't drift. */
+  .masthead-nav { display: none; }
+  .nav-toggle[aria-expanded="true"] + .masthead-nav {
+    display: block;
+    position: absolute;
+    top: calc(100% + .6rem);
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    box-shadow: 0 10px 28px -14px var(--shadow);
+    padding: .2rem 1.1rem;
+  }
+
+  /* A small notch ties the panel back to the button that opened it. */
+  .nav-toggle[aria-expanded="true"] + .masthead-nav::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: calc(var(--portrait-size) + 1.6rem);
+    width: 8px;
+    height: 8px;
+    background: var(--paper);
+    border-left: 1px solid var(--rule);
+    border-top: 1px solid var(--rule);
+    transform: rotate(45deg);
+  }
+
+  .masthead-nav ul { flex-direction: column; margin: 0; }
+  .masthead-nav li,
+  .masthead-nav li:first-child { padding: .6rem 0; }
+  .masthead-nav li + li { border-left: 0; border-top: 1px solid var(--rule-soft); }
+
+  .masthead-nav a {
+    display: block;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+  .masthead-nav a.is-current {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  /* Without JS the button can't work, so show the nav and hide the button. */
+  .no-js .nav-toggle { display: none; }
+  .no-js .masthead-nav { display: block; position: static; width: 100%; }
+}
 
 /* --- content ------------------------------------------------------------- */
 

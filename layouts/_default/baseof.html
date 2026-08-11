@@ -26,6 +26,22 @@
 
   <script>
     (function () {
+      var navToggle = document.querySelector(".nav-toggle");
+      if (navToggle) {
+        navToggle.addEventListener("click", function () {
+          var open = navToggle.getAttribute("aria-expanded") === "true";
+          navToggle.setAttribute("aria-expanded", String(!open));
+        });
+        document.addEventListener("keydown", function (event) {
+          if (event.key !== "Escape") return;
+          if (navToggle.getAttribute("aria-expanded") !== "true") return;
+          navToggle.setAttribute("aria-expanded", "false");
+          navToggle.focus();
+        });
+      }
+    })();
+
+    (function () {
       var root = document.documentElement;
       var button = document.querySelector(".theme-toggle");
       if (!button) return;
