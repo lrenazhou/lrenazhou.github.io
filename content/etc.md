@@ -4,6 +4,7 @@ date: 2021-02-16T12:08:55-08:00
 draft: false
 menu: "main"
 weight: 4
+aliases: ["/ephemera/"] # this page's old URL; keeps existing links working
 ---
 
 # Lists
