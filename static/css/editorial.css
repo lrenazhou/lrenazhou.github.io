@@ -165,18 +165,19 @@ body {
 .theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
 .theme-toggle svg { width: 1.05rem; height: 1.05rem; display: block; }
 
-/* Light shows the moon (click to go dark); dark shows the sun. The media query
-   covers the no-JS case; the [data-theme] rules come after so a choice wins. */
-.theme-toggle .icon-sun  { display: none; }
-.theme-toggle .icon-moon { display: block; }
+/* The icon names the current theme: light shows the sun, dark shows the moon.
+   The media query covers the no-JS case; the [data-theme] rules come after so a
+   choice wins. */
+.theme-toggle .icon-sun  { display: block; }
+.theme-toggle .icon-moon { display: none; }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .icon-sun  { display: block; }
-  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun  { display: none; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: block; }
 }
 
-:root[data-theme="dark"] .theme-toggle .icon-sun  { display: block; }
-:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun  { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 
 /* No JavaScript, no working button — hide it rather than show a dead control. */
 .no-js .theme-toggle { display: none; }
