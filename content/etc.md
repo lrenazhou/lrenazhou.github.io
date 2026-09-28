@@ -26,8 +26,7 @@ Fiction:
 - Fever Dream, Samantha Schweblin (2014)
 - Jazz, Toni Morrison (1992)
 - Things We Lost In The Fire, Mariana Enriquez (2015)
-- Ficciones, Jorge Luis Borges (1944)
-- Cosmicomics, Italo Calvino (1965)
+- 2666, Roberto Bolaño (2004)
 - Pride and Prejudice, Jane Austen (1813)
 - "[The Man Who Ended History: A Documentary](https://kenliu.name/blog/2012/01/06/the-man-who-ended-history/)," Ken Liu (2011)
 
@@ -46,9 +45,7 @@ Other:
 - A Seat at the Table, Solange (2016)
 - Essentials, Erika de Casier (2019)
 - Sunbather, Deafheaven (2013)
-- Love Deluxe, Sade (1992)
-- On the Corner, Miles Davis (1972)
-- Black Classical Music, Yussef Dayes (2023)
+- The Yussef Dayes Experience (Live from Malibu), Yussef Dayes (2024)
 - 7, Beach House (2018)
 
 Some mildly curated playlists: 
